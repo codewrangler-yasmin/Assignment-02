@@ -6,6 +6,11 @@
     <title>Fitness</title>
     <link rel="stylesheet" href="./assets/styles/styles.css" />
     <link rel="stylesheet" href="./assets/styles/responsive.css" />
+    <link
+      rel="shortcut icon"
+      href="./assets/images/favicon.png"
+      type="image/x-icon"
+    />
     <script
       src="https://kit.fontawesome.com/4789f143ea.js"
       crossorigin="anonymous"
@@ -14,15 +19,15 @@
   <body>
     <!-- header banner section -->
     <header id="header-container">
-      <div class="container grid">
+      <section class="container grid">
         <!-- navbar section -->
         <div class="navbar grid">
           <div class="logo">
             <a href="#"><h1>Fitness</h1></a>
           </div>
           <nav>
-            <ul class="nav-links">
-              <li><a class="active" href="#">Home</a></li>
+            <ul class="nav-links grid">
+              <li class="active"><a href="#">Home</a></li>
               <li><a href="#">Service</a></li>
               <li><a href="#">Contact</a></li>
               <li><a href="#">About</a></li>
@@ -30,8 +35,8 @@
           </nav>
         </div>
         <!-- banner section -->
-        <div class="banner-container">
-          <div class="banner-content">
+        <div class="banner-container grid">
+          <div class="banner-content grid">
             <h2 class="banner-title">
               Get body in <span class="special-font">shape</span> & stay healthy
             </h2>
@@ -44,24 +49,365 @@
               <a href="#" class="btn btn-border">Download App</a>
             </div>
           </div>
-          <div class="banner-img-container">
+          <div class="banner-middle-video-icon">
+            <span
+              ><a href=""><i class="fa-solid fa-play"></i></a
+            ></span>
+          </div>
+          <div class="banner-img-container grid">
             <div class="banner-img">
               <img src="./assets/images/image1.png" alt="Trainer" />
-            </div>
-            <div class="banner-img-inner inner-left">
-              <span class="orange-ball"></span>
-              <h4>350+</h4>
-              <p>Video tutorial</p>
-            </div>
-            <div class="banner-img-inner inner-right">
-              <h3>500+</h3>
-              <p>Free Workout Videos</p>
+              <a href="" class="banner-img-inner inner-left">
+                <div><span class="orange-ball"></span></div>
+                <div>
+                  <h4>350+</h4>
+                  <p>Video tutorial</p>
+                </div>
+              </a>
+              <a href="" class="banner-img-inner inner-right">
+                <h3>500+</h3>
+                <p>Free Workout Videos</p>
+              </a>
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </header>
-    <main></main>
-    <footer></footer>
+    <main>
+      <!-- fitness plan section -->
+      <section id="fitness-plan-container">
+        <div class="container section-padding">
+          <div class="section-title text-center grid">
+            <h2 class="title">Change Your Habits</h2>
+            <p>
+              We believe fitness should be accessible to everyone, everywhere,
+              regardless of income or access to a gym.
+            </p>
+          </div>
+          <div class="fitness-plan-content grid">
+            <!-- single item 1 -->
+            <div class="fitness-plan-item">
+              <div class="item-img">
+                <img src="./assets/images/image3.png" alt="Movement" />
+              </div>
+              <div class="item-text">
+                <h3>Movement</h3>
+                <p>We believe fitness should be accessible to everyone</p>
+              </div>
+            </div>
+            <!-- single item 2 -->
+            <div class="fitness-plan-item">
+              <div class="item-img">
+                <img src="./assets/images/image2.png" alt="Time" />
+              </div>
+              <div class="item-text">
+                <h3>Time</h3>
+                <p>We believe fitness should be accessible to everyone</p>
+              </div>
+            </div>
+            <!-- single item 3 -->
+            <div class="fitness-plan-item">
+              <div class="item-img">
+                <img src="./assets/images/image4.png" alt="Practice" />
+              </div>
+              <div class="item-text">
+                <h3>Practice</h3>
+                <p>We believe fitness should be accessible to everyone</p>
+              </div>
+            </div>
+            <!-- single item 4 -->
+            <div class="fitness-plan-item">
+              <div class="item-img">
+                <img src="./assets/images/image5.png" alt="Weight Loss" />
+              </div>
+              <div class="item-text">
+                <h3>Weight Loss</h3>
+                <p>We believe fitness should be accessible to everyone</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- fitness featured card section -->
+      <section id="featured-card-container">
+        <div class="container section-padding pt-0">
+          <div class="featured-card-box grid">
+            <div class="featured-card-content">
+              <div class="featured-card-text">
+                <h2>
+                  Run an Extra <br />
+                  Mile Easily
+                </h2>
+                <p>
+                  We believe fitness should be accessible to everyone,
+                  everywhere, regardless of income or access to a gym. With
+                  hundreds of professional workouts.
+                </p>
+              </div>
+              <div class="btn-container">
+                <a href="" class="btn btn-primary">Join Now</a>
+              </div>
+            </div>
+            <div class="featured-card-img">
+              <img src="./assets/images/run-small.png" alt="Run" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- services section -->
+      <section id="services-container">
+        <div class="container section-padding pt-0">
+          <div class="section-title grid">
+            <h2 class="title">Trainings and Exercises</h2>
+            <p>
+              We believe fitness should be accessible to everyone, everywhere,
+              regardless of income or access to a gym.
+            </p>
+          </div>
+          <div class="services-content grid">
+            <!-- single service item 1 -->
+            <a href="#" class="single-service-item">
+              <img src="./assets/images/exercise1.jpg" alt="Exercise 1" />
+              <div class="service-inner-content">
+                <p>Leg Press: Works the quadriceps and glutes</p>
+              </div>
+            </a>
+            <!-- single service item 2 -->
+            <a href="#" class="single-service-item">
+              <img src="./assets/images/exercise2.png" alt="Exercise 2" />
+              <div class="service-inner-content">
+                <p>Leg Press: Works the quadriceps and glutes</p>
+              </div>
+            </a>
+            <!-- single service item 3 -->
+            <a href="#" class="single-service-item">
+              <img src="./assets/images/exercise3.png" alt="Exercise 3" />
+              <div class="service-inner-content">
+                <p>Leg Press: Works the quadriceps and glutes</p>
+              </div>
+            </a>
+            <!-- single service item 4 -->
+            <a href="#" class="single-service-item">
+              <img src="./assets/images/exercise4.png" alt="Exercise 4" />
+              <div class="service-inner-content">
+                <p>Leg Press: Works the quadriceps and glutes</p>
+              </div>
+            </a>
+            <!-- single service item 5 -->
+            <a href="#" class="single-service-item">
+              <img src="./assets/images/exercise5.jpg" alt="Exercise 5" />
+              <div class="service-inner-content">
+                <p>Leg Press: Works the quadriceps and glutes</p>
+              </div>
+            </a>
+            <!-- single service item 6 -->
+            <a href="#" class="single-service-item">
+              <img src="./assets/images/exercise6.jpg" alt="Exercise 6" />
+              <div class="service-inner-content">
+                <p>Leg Press: Works the quadriceps and glutes</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- BMI calculator section -->
+      <section id="bmi-container">
+        <div class="container">
+          <div class="section-title grid">
+            <h2 class="title">BMI Calculator</h2>
+            <p>
+              We believe fitness should be accessible to everyone, everywhere,
+              regardless of income or access to a gym.
+            </p>
+          </div>
+        </div>
+        <div class="bmi-bg">
+          <div class="container">
+            <div class="bmi-content grid">
+              <!-- BMI chart -->
+              <div class="bmi-chart-box">
+                <h2 class="bmi-title">BMI Calculator Chart</h2>
+                <table class="bmi-table">
+                  <thead>
+                    <tr>
+                      <th>BMI</th>
+                      <th>Weight Status</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Below 18.5</td>
+                      <td>Underweight</td>
+                    </tr>
+                    <tr>
+                      <td>18.5 - 24.9</td>
+                      <td>Healthy</td>
+                    </tr>
+                    <tr>
+                      <td>25.0 - 29.9</td>
+                      <td>Overweight</td>
+                    </tr>
+                    <tr>
+                      <td>30.0 - and Above</td>
+                      <td>Obese</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!-- BMI Calculator -->
+              <div class="bmi-calc-form">
+                <h2 class="bmi-title">Calculate your BMI</h2>
+                <p>
+                  We believe fitness should be accessible to everyone,
+                  everywhere, regardless of income or access to a gym.
+                </p>
+                <form action="">
+                  <div class="input-width-half">
+                    <input
+                      type="number"
+                      name="height"
+                      id="height"
+                      placeholder="Height/cm"
+                    />
+                    <input
+                      type="number"
+                      name="weight"
+                      id="weight"
+                      placeholder="Weight/kg"
+                    />
+                  </div>
+                  <div class="input-width-half">
+                    <input
+                      type="number"
+                      name="age"
+                      id="age"
+                      placeholder="Age"
+                    />
+                    <select name="sex" id="sex">
+                      <option value="">Sex</option>
+                      <option value="male">Male</option>
+                      <option value="female">Female</option>
+                      <option value="other">Other</option>
+                    </select>
+                  </div>
+                  <div class="input-width-full">
+                    <select name="activity" id="activity">
+                      <option value="">Select an activity factor</option>
+                      <option value="">1</option>
+                      <option value="">2</option>
+                      <option value="">3</option>
+                      <option value="">4</option>
+                      <option value="">5</option>
+                    </select>
+                  </div>
+                  <div class="input-width-1/2">
+                    <button class="btn btn-primary">Calculate</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Our team section -->
+      <section id="team-container">
+        <div class="container section-padding">
+          <div class="section-title text-center grid">
+            <h2 class="title">Meet Our Team</h2>
+            <p>
+              We believe fitness should be accessible to everyone, everywhere,
+              regardless of income or access to a gym.
+            </p>
+          </div>
+          <div class="team-content grid">
+            <!-- trainer 1 -->
+            <a href="" class="team-item">
+              <img src="./assets/images/trainer1.png" alt="Trainer 1" />
+              <div class="team-item-inner-text">
+                <h3>Jerome Bell <span>Trainer</span></h3>
+              </div>
+            </a>
+            <!-- trainer 2 -->
+            <a href="" class="team-item">
+              <img src="./assets/images/trainer2.png" alt="Trainer 2" />
+              <div class="team-item-inner-text">
+                <h3>Cameron Williamson <span>Trainer</span></h3>
+              </div>
+            </a>
+            <!-- trainer 3 -->
+            <a href="" class="team-item">
+              <img src="./assets/images/trainer3.png" alt="Trainer 3" />
+              <div class="team-item-inner-text">
+                <h3>Darrell Steward <span>Trainer</span></h3>
+              </div>
+            </a>
+            <!-- trainer 4 -->
+            <a href="" class="team-item">
+              <img src="./assets/images/trainer4.png" alt="Trainer 4" />
+              <div class="team-item-inner-text">
+                <h3>Dianne Russell <span>Trainer</span></h3>
+              </div>
+            </a>
+            <!-- trainer 5 -->
+            <a href="" class="team-item">
+              <img src="./assets/images/trainer5.png" alt="Trainer 5" />
+              <div class="team-item-inner-text">
+                <h3>Cody Fisher <span>Trainer</span></h3>
+              </div>
+            </a>
+            <!-- trainer 6 -->
+            <a href="" class="team-item">
+              <img src="./assets/images/trainer6.png" alt="Trainer 6" />
+              <div class="team-item-inner-text">
+                <h3>Theresa Webb <span>Trainer</span></h3>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- footer section -->
+    <footer id="footer-container">
+      <div class="container section-padding pb-0">
+        <div class="footer-content grid">
+          <div class="footer-logo">
+            <div class="logo">
+              <a href="#"><h1>Fitness</h1></a>
+            </div>
+            <p>
+              We believe fitness should be accessible to everyone, everywhere,
+              regardless of income or access to a gym. With hundreds of
+              professional workouts.
+            </p>
+          </div>
+          <div class="footer-menu">
+            <div class="footer-menu-title">
+              <h3>Get Started</h3>
+            </div>
+            <ul>
+              <li><a href="#">Service</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Affiliate Program</a></li>
+              <li><a href="#">About Us</a></li>
+            </ul>
+          </div>
+          <div class="footer-menu-2">
+            <div class="footer-menu-title">
+              <h3>Our Services</h3>
+            </div>
+            <ul>
+              <li><a href="#">Fitness</a></li>
+              <li><a href="#">Platform</a></li>
+              <li><a href="#">Workout Library</a></li>
+              <li><a href="#">App Design</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- Copyright section -->
+        <div class="copyright-content text-center">
+          <p>All right reserved &copy; Fitness 2024</p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
