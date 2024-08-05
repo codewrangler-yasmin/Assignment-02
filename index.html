@@ -26,8 +26,8 @@
             <a href="#"><h1>Fitness</h1></a>
           </div>
           <nav>
-            <ul class="nav-links grid">
-              <li class="active"><a href="#">Home</a></li>
+            <ul class="nav-links flex">
+              <li><a href="#" class="active">Home</a></li>
               <li><a href="#">Service</a></li>
               <li><a href="#">Contact</a></li>
               <li><a href="#">About</a></li>
@@ -36,7 +36,7 @@
         </div>
         <!-- banner section -->
         <div class="banner-container grid">
-          <div class="banner-content grid">
+          <div class="banner-content flex">
             <h2 class="banner-title">
               Get body in <span class="special-font">shape</span> & stay healthy
             </h2>
@@ -50,11 +50,14 @@
             </div>
           </div>
           <div class="banner-middle-video-icon">
-            <span
-              ><a href=""><i class="fa-solid fa-play"></i></a
-            ></span>
+            <a
+              class="play-button"
+              href="https://youtu.be/ewCXXm6IEl4?si=RNPfMpY-nrV4QYUW"
+              target="blank"
+              ><i class="fa-solid fa-play"></i
+            ></a>
           </div>
-          <div class="banner-img-container grid">
+          <div class="banner-img-container">
             <div class="banner-img">
               <img src="./assets/images/image1.png" alt="Trainer" />
               <a href="" class="banner-img-inner inner-left">
@@ -81,7 +84,8 @@
             <h2 class="title">Change Your Habits</h2>
             <p>
               We believe fitness should be accessible to everyone, everywhere,
-              regardless of income or access to a gym.
+              regardless of income or <br />
+              access to a gym.
             </p>
           </div>
           <div class="fitness-plan-content grid">
@@ -132,8 +136,8 @@
       <section id="featured-card-container">
         <div class="container section-padding pt-0">
           <div class="featured-card-box grid">
-            <div class="featured-card-content">
-              <div class="featured-card-text">
+            <div class="featured-card-content flex">
+              <div class="featured-card-text flex">
                 <h2>
                   Run an Extra <br />
                   Mile Easily
@@ -143,9 +147,9 @@
                   everywhere, regardless of income or access to a gym. With
                   hundreds of professional workouts.
                 </p>
-              </div>
-              <div class="btn-container">
-                <a href="" class="btn btn-primary">Join Now</a>
+                <div class="btn-container">
+                  <a href="" class="btn btn-primary">Join Now</a>
+                </div>
               </div>
             </div>
             <div class="featured-card-img">
@@ -304,6 +308,76 @@
                     <button class="btn btn-primary">Calculate</button>
                   </div>
                 </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Packages Section -->
+      <section id="packages-container">
+        <div class="container section-padding pb-0">
+          <div class="section-title text-center grid">
+            <h2 class="title">Choose the best plan</h2>
+            <p>
+              Choose a plan that is right individually or for your growing team.
+              Simple pricing & no hidden charges.
+            </p>
+          </div>
+          <div class="packages-content grid">
+            <div class="single-package-item">
+              <div class="package-inner-text flex">
+                <h3>Discover</h3>
+                <p><span>$99</span> /Per Month</p>
+                <ul>
+                  <li><i class="fa-solid fa-check"></i> 5 classes per month</li>
+                  <li>
+                    <i class="fa-solid fa-check"></i> 4 group class monthly
+                  </li>
+                  <li><i class="fa-solid fa-check"></i> Online class access</li>
+                  <li>
+                    <i class="fa-solid fa-check"></i> E-book fitness guide
+                  </li>
+                </ul>
+                <a href="" class="btn btn-border">Choose Plan</a>
+              </div>
+            </div>
+            <div class="active single-package-item">
+              <div class="package-inner-text flex">
+                <h3>Enterprise</h3>
+                <p><span>$299</span> /Per Month</p>
+                <ul>
+                  <li>
+                    <i class="fa-solid fa-check"></i> 10 classes per month
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check"></i> 8 group class monthly
+                  </li>
+                  <li><i class="fa-solid fa-check"></i> Online class access</li>
+                  <li>
+                    <i class="fa-solid fa-check"></i> E-book fitness guide
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check"></i> 7 extra fitness training
+                  </li>
+                </ul>
+                <a href="" class="btn btn-border">Choose Plan</a>
+              </div>
+            </div>
+            <div class="single-package-item">
+              <div class="package-inner-text flex">
+                <h3>Professional</h3>
+                <p><span>$199</span> /Per Month</p>
+                <ul>
+                  <li><i class="fa-solid fa-check"></i> 7 classes per month</li>
+                  <li>
+                    <i class="fa-solid fa-check"></i> 6 group class monthly
+                  </li>
+                  <li><i class="fa-solid fa-check"></i> Online class access</li>
+                  <li>
+                    <i class="fa-solid fa-check"></i> E-book fitness guide
+                  </li>
+                </ul>
+                <a href="" class="btn btn-border">Choose Plan</a>
               </div>
             </div>
           </div>

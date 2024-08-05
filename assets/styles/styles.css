@@ -117,7 +117,7 @@ h6 {
   border: 1px solid var(--text-primary);
 }
 .btn-primary:hover {
-  background-color: var(--bg-color);
+  background-color: transparent;
 }
 .btn-border {
   border: 1px solid var(--text-white);
@@ -127,12 +127,15 @@ h6 {
   color: var(--text-black);
 }
 .container {
-  width: 1060px;
+  width: 1440px;
   margin: 0 auto;
 }
 .grid {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
+}
+.flex {
+  display: flex;
 }
 
 /* header & navbar styles */
@@ -174,29 +177,28 @@ header#header-container::before {
   line-height: 1.2;
 }
 nav {
-  grid-column: 7 / 13;
+  grid-column: 9 / 13;
 }
 ul.nav-links {
-  padding: 4px;
+  padding: 5px 4px;
   border-radius: 39px;
   border: 1px solid #ffffff1a;
-  grid-template-columns: repeat(12, 1fr);
+  justify-content: space-between;
+  align-items: center;
   gap: 24px;
 }
 ul.nav-links li {
-  grid-column: span 3;
-  justify-self: stretch;
-  text-align: center;
-  transition: all ease-out 0.3s;
+  display: inline-block;
 }
 ul.nav-links li a {
-  padding: 5px 0;
-  display: inline-block;
+  padding: 8px 20px;
   font-size: 1.13rem;
   font-weight: 500;
+  transition: all ease-out 0.3s;
+  line-height: 1.9;
 }
-ul.nav-links li.active,
-ul.nav-links li:hover {
+ul.nav-links li a.active,
+ul.nav-links li:hover a {
   border-radius: 46px;
   background: var(--bg-primary);
 }
@@ -205,16 +207,13 @@ ul.nav-links li:hover a {
 }
 /* banner styles */
 .banner-content {
-  grid-column: 1 / 7;
-  align-self: start;
-  row-gap: 28px;
+  grid-column: 1 / 6;
   padding: 40px 0;
+  flex-direction: column;
+  gap: 28px;
 }
-.banner-img-container {
-  grid-column: 8 / 13;
-}
+
 .banner-content > h2.banner-title {
-  grid-column: 1 / 13;
   font-size: 5.2rem;
   font-style: normal;
   font-weight: 900;
@@ -228,17 +227,77 @@ ul.nav-links li:hover a {
   line-height: 0.5;
 }
 .banner-content > p.banner-text {
-  grid-column: 1 / 13;
   letter-spacing: 0.5px;
 }
-.banner-content > .btn-container {
-  grid-column: 1 / 13;
-}
+
 .banner-content > .btn-container .btn-primary {
   margin-right: 15px;
 }
+.banner-middle-video-icon {
+  grid-column: 6 / 8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+a.play-button {
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+  font-size: 25px;
+  background: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 50%;
+  animation: shadowPulse 1s infinite linear;
+}
+
+a.play-button:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+  animation: ringPulse 1s infinite linear;
+}
+
+@keyframes ringPulse {
+  0% {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  25% {
+    opacity: 1;
+  }
+  75%,
+  100% {
+    opacity: 0;
+    transform: scale(1.5);
+  }
+}
+@keyframes shadowPulse {
+  0% {
+    box-shadow: 0 0 8px 6px transparent, 0 0 0 0 transparent,
+      0 0 0 0 transparent;
+  }
+  25% {
+    box-shadow: 0 0 8px 6px rgba(255, 255, 255, 0.1), 0 0 12px 10px transparent,
+      0 0 12px 5px rgba(255, 255, 255, 0.1);
+  }
+  75%,
+  100% {
+    box-shadow: 0 0 8px 6px transparent, 0 0 0 20px transparent,
+      0 0 0 20px transparent;
+  }
+}
+.banner-img-container {
+  grid-column: 10 / 13;
+}
 .banner-img-container .banner-img {
-  grid-column: 4 / 13;
   position: relative;
 }
 .banner-img-container .banner-img img {
@@ -296,7 +355,7 @@ ul.nav-links li:hover a {
 /* fitness plan styles */
 #fitness-plan-container .section-title h2,
 #fitness-plan-container .section-title p {
-  grid-column: 3 / 11;
+  grid-column: 4 / 10;
 }
 .fitness-plan-content {
   gap: 40px;
@@ -311,8 +370,11 @@ ul.nav-links li:hover a {
 .fitness-plan-item .item-img img {
   border: 4px solid rgba(255, 255, 255, 0.1);
   border-radius: 50%;
-  height: 180px;
-  width: 180px;
+  height: 260px;
+  width: 260px;
+}
+.fitness-plan-item .item-text {
+  padding: 0 40px;
 }
 .fitness-plan-item .item-text h3 {
   font-size: 1.13rem;
@@ -331,21 +393,20 @@ ul.nav-links li:hover a {
 .featured-card-box {
   border-radius: 18px;
   background-color: #222222;
-  padding: 30px 30px 20px;
+  padding: 30px 60px 30px;
 }
 .featured-card-content {
-  grid-column: span 5;
-  padding-left: 25px;
+  grid-column: 1 / 5;
 }
-
 .featured-card-text {
-  margin-bottom: 30px;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
 }
 .featured-card-text h2 {
-  font-size: 2.7rem;
+  font-size: 3.2rem;
   font-weight: 900;
   line-height: 1.2;
-  margin-bottom: 15px;
 }
 .featured-card-content .btn-container .btn,
 .bmi-calc-form .btn {
@@ -363,10 +424,10 @@ ul.nav-links li:hover a {
 /* services styles */
 #services-container .section-title .title,
 #services-container .section-title p {
-  grid-column: span 7;
+  grid-column: 1 / 6;
 }
 .services-content {
-  grid-auto-rows: 200px;
+  grid-auto-rows: 300px;
 }
 .single-service-item img {
   width: 100%;
@@ -403,7 +464,6 @@ ul.nav-links li:hover a {
   display: flex;
   align-items: end;
   padding: 30px;
-  transition: all ease-in-out 0.3s;
 }
 .service-inner-content p {
   color: var(--text-white);
@@ -426,7 +486,7 @@ ul.nav-links li:hover a {
 .single-service-item:nth-child(6) .service-inner-content {
   background: rgba(0, 71, 255, 0.3);
 }
-.single-service-item:hover .service-inner-content {
+a.single-service-item:hover .service-inner-content {
   align-items: start;
 }
 
@@ -434,7 +494,7 @@ ul.nav-links li:hover a {
 
 #bmi-container .section-title .title,
 #bmi-container .section-title p {
-  grid-column: 3 / 10;
+  grid-column: 3 / 8;
 }
 .bmi-bg {
   background-color: #222222;
@@ -468,6 +528,7 @@ table.bmi-table th {
 
 table.bmi-table {
   border-collapse: collapse;
+  width: 70%;
 }
 
 table.bmi-table th {
@@ -504,10 +565,69 @@ table.bmi-table th {
 .input-width-full select {
   width: 100%;
 }
+/* Packages styles */
+.packages-content {
+  margin-top: 50px;
+}
+.single-package-item {
+  grid-column: span 4;
+}
+.packages-content {
+  align-items: center;
+  text-align: center;
+  gap: 30px;
+}
+.package-inner-text {
+  flex-direction: column;
+  gap: 30px;
+  padding: 50px;
+  background-color: #464646;
+  border-radius: 24px;
+}
+.package-inner-text h3 {
+  font-size: 1.6rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+
+.package-inner-text p {
+  font-size: 1.6rem;
+  color: #fff;
+  font-weight: 300;
+}
+
+.package-inner-text p span {
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+}
+.package-inner-text ul li {
+  position: relative;
+  font-size: 1.3rem;
+  font-weight: 200;
+  margin-bottom: 15px;
+}
+.package-inner-text ul li i {
+  position: absolute;
+  left: 10%;
+  top: 25%;
+}
+.active.single-package-item .package-inner-text {
+  background-color: var(--bg-primary);
+}
+.active.single-package-item .package-inner-text .btn {
+  background-color: var(--bg-white);
+  color: var(--text-primary);
+}
+.active.single-package-item .package-inner-text .btn:hover {
+  background-color: transparent;
+  color: var(--text-white) !important;
+}
 /* team styles */
 #team-container .section-title .title,
 #team-container .section-title p {
-  grid-column: 3 / 11;
+  grid-column: 4 / 10;
 }
 .team-content {
   padding: 20px;
@@ -521,6 +641,7 @@ table.bmi-table th {
 .team-item {
   position: relative;
   z-index: 1;
+  transition: all ease-in-out 0.3s;
 }
 .team-item img {
   width: 100%;
@@ -536,11 +657,6 @@ table.bmi-table th {
   height: 100%;
   width: 100%;
   border-radius: 18px;
-  background: linear-gradient(
-    0deg,
-    rgb(0 0 0 / 74%) 0%,
-    rgba(0, 0, 0, 0.2) 100%
-  );
   display: flex;
   align-items: end;
   padding: 20px;
@@ -557,7 +673,11 @@ table.bmi-table th {
   transition: all ease-in-out 0.3s;
 }
 .team-item:hover .team-item-inner-text {
-  background: linear-gradient(0deg, rgb(0 0 0 / 90%) 0%, rgb(0 0 0 / 50%) 100%);
+  background: linear-gradient(
+    0deg,
+    rgb(0 0 0 / 74%) 0%,
+    rgba(0, 0, 0, 0.2) 100%
+  );
 }
 .team-item:hover .team-item-inner-text h3 {
   margin-bottom: 40px;
@@ -574,7 +694,7 @@ footer#footer-container {
   margin-bottom: 20px;
 }
 .footer-logo {
-  grid-column: 1 / 7;
+  grid-column: 1 / 5;
 }
 .footer-menu {
   grid-column: 7 / 10;
