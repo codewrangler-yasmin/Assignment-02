@@ -1,8 +1,10 @@
 /* Desktop Layout */
 @media only screen and (min-width: 1200px) and (max-width: 1440px) {
+  /* common styles */
   .container {
     width: 1200px;
   }
+  /* banner styles */
   .banner-content > h2.banner-title {
     font-size: 3.8rem;
   }
@@ -13,6 +15,7 @@
 
 /* Medium Layout: 1200px. */
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
+  /* common styles */
   body {
     width: 100%;
   }
@@ -35,6 +38,7 @@
   .banner-content > h2.banner-title {
     font-size: 3.8rem;
   }
+  /* banner styles */
   .banner-content > h2.banner-title > span.special-font {
     font-size: 7.2rem;
   }
@@ -44,6 +48,7 @@
   .banner-img-container {
     grid-column: 8 / 12;
   }
+  /* fitness styles */
   .fitness-plan-content {
     margin-top: 30px;
   }
@@ -55,13 +60,16 @@
   #fitness-plan-container .section-title p {
     grid-column: 3 / 11;
   }
+  /* services styles */
   #services-container .section-title .title,
   #services-container .section-title p {
     grid-column: 1 / 9;
   }
+  /* featured styles */
   .featured-card-img img {
     object-fit: cover;
   }
+  /* pricing packages styles */
   .package-inner-text {
     padding: 30px;
   }
