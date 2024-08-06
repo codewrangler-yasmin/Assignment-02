@@ -1,5 +1,79 @@
-/* Medium Layout: 1280px. */
+/* Desktop Layout */
+@media only screen and (min-width: 1200px) and (max-width: 1440px) {
+  .container {
+    width: 1200px;
+  }
+  .banner-content > h2.banner-title {
+    font-size: 3.8rem;
+  }
+  .banner-content > h2.banner-title > span.special-font {
+    font-size: 7.2rem;
+  }
+}
+
+/* Medium Layout: 1200px. */
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
+  body {
+    width: 100%;
+  }
+  .container {
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .section-title {
+    padding-bottom: 25px;
+  }
+  .section-padding {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  /* navbar styles */
+  nav {
+    grid-column: 6 / 13;
+  }
+  .banner-content > h2.banner-title {
+    font-size: 3.8rem;
+  }
+  .banner-content > h2.banner-title > span.special-font {
+    font-size: 7.2rem;
+  }
+  .banner-content .btn {
+    padding: 15px 25px;
+  }
+  .banner-img-container {
+    grid-column: 8 / 12;
+  }
+  .fitness-plan-content {
+    margin-top: 30px;
+  }
+  .fitness-plan-item .item-img img {
+    height: 200px;
+    width: 200px;
+  }
+  #fitness-plan-container .section-title h2,
+  #fitness-plan-container .section-title p {
+    grid-column: 3 / 11;
+  }
+  #services-container .section-title .title,
+  #services-container .section-title p {
+    grid-column: 1 / 9;
+  }
+  .featured-card-img img {
+    object-fit: cover;
+  }
+  .package-inner-text {
+    padding: 30px;
+  }
+  .package-inner-text p {
+    font-size: 1.3rem;
+  }
+  .package-inner-text ul li {
+    font-size: 1.2rem;
+  }
+  .package-inner-text ul li i {
+    left: -2%;
+  }
 }
 /* Tablet Layout: 768px. */
 @media only screen and (min-width: 768px) and (max-width: 992px) {
@@ -205,6 +279,14 @@
   nav {
     display: none;
   }
+  .mobile-nav {
+    display: inline-block;
+    grid-column: 12 / 13;
+  }
+  #bars {
+    font-size: 1.4rem;
+    line-height: 1.8;
+  }
   /* banner-styles */
   .banner-container {
     position: relative;
@@ -396,12 +478,21 @@
   nav {
     display: none;
   }
+  .mobile-nav {
+    display: inline-block;
+    grid-column: 12 / 13;
+  }
+  #bars {
+    font-size: 1.4rem;
+    line-height: 1.8;
+  }
   /* banner-styles */
   .banner-container {
     position: relative;
   }
   .banner-content {
     grid-column: span 12;
+    padding-top: 60px;
   }
   .banner-content > h2.banner-title {
     font-size: 3.2rem;

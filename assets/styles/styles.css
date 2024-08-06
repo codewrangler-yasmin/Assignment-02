@@ -129,6 +129,8 @@ h6 {
 .container {
   width: 1440px;
   margin: 0 auto;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 .grid {
   display: grid;
@@ -177,7 +179,10 @@ header#header-container::before {
   line-height: 1.2;
 }
 nav {
-  grid-column: 9 / 13;
+  grid-column: 8 / 13;
+}
+.mobile-nav {
+  display: none;
 }
 ul.nav-links {
   padding: 5px 4px;
