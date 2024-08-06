@@ -23,16 +23,19 @@
     font-size: 1rem;
   }
   /* banner-styles */
-  .banner-content,
-  .banner-img-container {
+  .banner-container {
+    position: relative;
+  }
+  .banner-content {
     grid-column: span 12;
+    padding: 40px;
   }
-  .banner-content > h2.banner-title,
-  .banner-content > p.banner-text,
-  .banner-content > .btn-container {
-    grid-column: 2 / 12;
+  .banner-middle-video-icon {
+    position: absolute;
+    left: -150%;
+    bottom: 35%;
   }
-  .banner-img-container .banner-img {
+  .banner-img-container {
     grid-column: 4 / 9;
   }
   .banner-img-container .banner-img-inner.inner-left {
@@ -55,13 +58,18 @@
   .fitness-plan-content {
     column-gap: 0;
   }
+
   .fitness-plan-item:nth-child(1),
   .fitness-plan-item:nth-child(3) {
-    grid-column: 3 / 6;
+    grid-column: 2 / 7;
   }
   .fitness-plan-item:nth-child(2),
   .fitness-plan-item:nth-child(4) {
-    grid-column: 8 / 11;
+    grid-column: 7 / 12;
+  }
+  .fitness-plan-item .item-img img {
+    height: 180px;
+    width: 180px;
   }
   /* featured styles */
   .featured-card-content {
@@ -70,12 +78,16 @@
   .featured-card-img {
     grid-column: 8 / 13;
   }
+  .featured-card-img img {
+    object-fit: cover;
+  }
   .featured-card-text h2 {
     font-size: 1.8rem;
   }
   .featured-card-text {
     margin-bottom: 20px;
   }
+
   /* services styles */
   #services-container .section-title .title,
   #services-container .section-title p {

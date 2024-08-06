@@ -325,6 +325,15 @@ a.play-button:before {
   display: inline-block;
   border-radius: 50%;
   background-color: var(--bg-primary);
+  position: relative;
+}
+.banner-img-container span.orange-ball i {
+  position: absolute;
+  top: 30%;
+  left: 37%;
+}
+.inner-left:hover span.orange-ball i {
+  color: var(--text-white);
 }
 .banner-img-container .banner-img-inner.inner-left h4 {
   color: #fafaf9;
@@ -352,6 +361,7 @@ a.play-button:before {
   letter-spacing: 1px;
   line-height: 1.2;
 }
+
 /* fitness plan styles */
 #fitness-plan-container .section-title h2,
 #fitness-plan-container .section-title p {
@@ -374,7 +384,7 @@ a.play-button:before {
   width: 260px;
 }
 .fitness-plan-item .item-text {
-  padding: 0 40px;
+  padding: 0 20px;
 }
 .fitness-plan-item .item-text h3 {
   font-size: 1.13rem;
@@ -396,7 +406,7 @@ a.play-button:before {
   padding: 30px 60px 30px;
 }
 .featured-card-content {
-  grid-column: 1 / 5;
+  grid-column: 1 / 8;
 }
 .featured-card-text {
   flex-direction: column;
@@ -424,7 +434,7 @@ a.play-button:before {
 /* services styles */
 #services-container .section-title .title,
 #services-container .section-title p {
-  grid-column: 1 / 6;
+  grid-column: 1 / 8;
 }
 .services-content {
   grid-auto-rows: 300px;
@@ -453,7 +463,6 @@ a.play-button:before {
 }
 .single-service-item {
   position: relative;
-  transition: all ease-in-out 0.3s;
 }
 .service-inner-content {
   position: absolute;
@@ -464,6 +473,7 @@ a.play-button:before {
   display: flex;
   align-items: end;
   padding: 30px;
+  transition: all ease-in-out 0.3s;
 }
 .service-inner-content p {
   color: var(--text-white);
@@ -487,14 +497,14 @@ a.play-button:before {
   background: rgba(0, 71, 255, 0.3);
 }
 a.single-service-item:hover .service-inner-content {
-  align-items: start;
+  padding-bottom: 170px;
 }
 
 /* BMI calculator styles */
 
 #bmi-container .section-title .title,
 #bmi-container .section-title p {
-  grid-column: 3 / 8;
+  grid-column: 3 / 9;
 }
 .bmi-bg {
   background-color: #222222;
