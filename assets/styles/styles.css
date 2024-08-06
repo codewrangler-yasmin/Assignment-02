@@ -295,7 +295,7 @@ a.play-button:before {
   }
 }
 .banner-img-container {
-  grid-column: 10 / 13;
+  grid-column: 9 / 12;
 }
 .banner-img-container .banner-img {
   position: relative;
@@ -312,12 +312,12 @@ a.play-button:before {
   backdrop-filter: blur(10px);
 }
 .banner-img-container .banner-img-inner.inner-left {
-  left: -40%;
+  left: -25%;
   bottom: 15%;
 }
 .banner-img-container .banner-img-inner.inner-right {
-  right: -20%;
-  top: 20%;
+  right: -30%;
+  top: 15%;
 }
 .banner-img-container span.orange-ball {
   width: 40px;
@@ -574,6 +574,18 @@ table.bmi-table th {
 }
 .input-width-full select {
   width: 100%;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+select#sex,
+select#activity {
+  border-right: 15px solid transparent;
+}
+.text-gray {
+  color: #222222;
 }
 /* Packages styles */
 .packages-content {

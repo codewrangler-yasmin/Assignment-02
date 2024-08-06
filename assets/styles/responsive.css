@@ -4,6 +4,9 @@
 /* Tablet Layout: 768px. */
 @media only screen and (min-width: 768px) and (max-width: 992px) {
   /* common styles */
+  body p {
+    font-size: 0.85rem;
+  }
   .container {
     width: 100%;
     padding-left: 30px;
@@ -130,6 +133,38 @@
   .bmi-calc-form .btn {
     margin-bottom: 0;
   }
+  /* pricing styles */
+  .single-package-item {
+    grid-column: 3 / 11;
+    font-size: 70%;
+  }
+  .packages-content {
+    margin-top: 0;
+  }
+  .package-inner-text {
+    gap: 15px;
+  }
+  .package-inner-text {
+    padding: 30px;
+  }
+  .package-inner-text h3 {
+    font-size: 1.2rem;
+  }
+  .package-inner-text p span {
+    font-size: 2rem;
+  }
+  .package-inner-text p {
+    font-size: 1.2rem;
+  }
+  .package-inner-text ul li {
+    font-size: 1rem;
+  }
+  .package-inner-text ul li i {
+    position: absolute;
+    left: 25%;
+    top: 25%;
+  }
+  /* Team styles */
   #team-container .section-title .title,
   #team-container .section-title p {
     grid-column: 2 / 12;
